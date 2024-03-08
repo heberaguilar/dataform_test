@@ -1,5 +1,5 @@
 {
-    "name": "test_workflows_transformation",
+    "name": "poc_public_dataform_repository",
     "dependencies": {
       "@dataform/core": "2.8.3"
     }
