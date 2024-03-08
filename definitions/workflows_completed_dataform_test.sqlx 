@@ -1,0 +1,12 @@
+config {
+    type: "table", // Creates a table in BigQuery.
+}
+
+
+SELECT
+  JSON_VALUE(attributes, '$.tenant_id') AS tenant_id,
+  JSON_VALUE(DATA, '$.product_id') AS product_id,
+  JSON_VALUE(DATA, '$.workflow_id') AS workflow_id,
+  PARSE_TIMESTAMP('%FT%X%Ez', JSON_VALUE(DATA, '$.occurred_on')) AS completed_workflow_at
+FROM
+  `akecld-prd-perf-analytics-sdb.europe_west1_workflows_analytics.workflows_event`

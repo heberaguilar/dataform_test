@@ -1,0 +1,8 @@
+{
+    "defaultSchema": "europe_west1_workflows_analytics",
+    "assertionSchema": "dataform_assertions",
+    "warehouse": "bigquery",
+    "defaultDatabase": "akecld-prd-perf-analytics-sdb",
+    "defaultLocation": "europe-west1"
+}
+    

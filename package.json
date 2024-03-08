@@ -1,0 +1,6 @@
+{
+    "name": "test_workflows_transformation",
+    "dependencies": {
+      "@dataform/core": "2.8.3"
+    }
+}
